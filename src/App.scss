@@ -1,0 +1,36 @@
+
+div {
+  box-sizing: border-box;
+}
+
+.table-container {
+  margin: 2em auto;
+  max-width: 90%;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+
+  .flex-cell {
+    width: 25%;
+    text-align: center;
+  }
+}
+
+.flex-rowspan {
+  width: 75%;
+
+  .flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .flex-cell {
+    width: calc(100% / 3);
+    text-align: center;
+  }
+  
+}
+
